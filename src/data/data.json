@@ -1,0 +1,51 @@
+{
+	"slider": {
+		"size14" : [
+			{
+				"id": 1,
+				"imgUrl": "https://via.placeholder.com/400/0000FF"
+			},
+			{
+				"id": 2,
+				"imgUrl": "https://via.placeholder.com/400/0000FF"
+			},
+			{
+				"id": 3,
+				"imgUrl": "https://via.placeholder.com/400/0000FF"
+			},
+			{
+				"id": 4,
+				"imgUrl": "https://via.placeholder.com/400/0000FF"
+			}
+		],
+		"size28" : [
+			{
+				"id": 1,
+				"imgUrl": "https://via.placeholder.com/400/00FFFF"
+			},
+			{
+				"id": 2,
+				"imgUrl": "https://via.placeholder.com/400/00FFFF"
+			},
+			{
+				"id": 3,
+				"imgUrl": "https://via.placeholder.com/400/00FFFF"
+			},
+			{
+				"id": 4,
+				"imgUrl": "https://via.placeholder.com/400/00FFFF"
+			}
+		]
+	},
+
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fermentum enim libero, eu venenatis nunc suscipit aliquam. Donec ac facilisis massa. Nunc vel dolor et nulla ullamcorper lobortis. Sed nec nisi ac turpis luctus rhoncus. Phasellus vel dolor feugiat, bibendum ligula id, fringilla lacus. Nullam in lectus aliquet, sollicitudin quam nec, placerat nulla.",
+    "bulletList": [
+        {"text": "Etiam vitae sapien et urna mollis luctus", "id": 1},
+        {"text": "Etiam vitae sapien et urna mollis luctus", "id": 2},
+        {"text": "Etiam vitae sapien et urna mollis luctus", "id": 3},
+        {"text": "Etiam vitae sapien et urna mollis luctus", "id": 4},
+        {"text": "Etiam vitae sapien et urna mollis luctus", "id": 5},
+        {"text": "Etiam vitae sapien et urna mollis luctus", "id": 6},
+        {"text": "Etiam vitae sapien et urna mollis luctus", "id": 7}
+    ]
+}

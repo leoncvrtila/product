@@ -1,0 +1,47 @@
+/*-----------------RESPONSIVE*/
+/*-----------------SLIDER*/
+.Slider {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .Slider {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .Slider {
+    margin: 0;
+  }
+}
+
+.SliderWrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SliderThumbnails {
+  width: 400px;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 425px) {
+  .SliderThumbnails {
+    width: 100%;
+  }
+}
+
+.SliderThumbnail {
+  cursor: pointer;
+}
+
+.SliderThumbnail h4 {
+  margin-top: 5%;
+}
+
+.SliderMainImg img {
+  width: 100%;
+}
+/*# sourceMappingURL=slider.css.map */

@@ -1,0 +1,230 @@
+/*-----------------RESPONSIVE*/
+
+$mob: 425px;
+$tablet: 768px;
+$laptop-small: 1024px;
+$laptop: 1440px;
+
+
+@mixin respond-to($media) {
+  @if $media == mob {
+    @media only screen and (max-width: $mob) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media only screen and (min-width: $mob + 1) and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop-screens {
+    @media only screen and (min-width: $laptop-small - 1) and (max-width: $laptop + 1) { @content; }
+  }
+  @else if $media == wide-screens {
+    @media only screen and (min-width: $laptop) { @content; }
+  }
+}
+
+/*-----------------MAIN*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: auto;
+    padding: 2% 0%;
+
+    @include respond-to(mob) { 
+        display: block;
+        padding: 5px 0%;
+        width: 95%;
+    }
+    @include respond-to(medium-screens) { 
+        width: 95%;
+    }
+    @include respond-to(laptop-screens) { 
+        width: 95%;
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+main > div:first-child {
+
+    width: 50%; 
+    
+    @include respond-to(mob) { 
+        width: 100%; 
+    }
+    @include respond-to(medium-screens) { 
+        width: 63%; 
+    }
+    @include respond-to(laptop-screens) { 
+        width: 55%; 
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+main > div:last-child {
+
+    width: 50%; 
+    
+    @include respond-to(mob) { 
+        width: 100%; 
+    }
+    @include respond-to(medium-screens) { 
+        width: 37%; 
+    }
+    @include respond-to(laptop-screens) { 
+        width: 45%; 
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+
+.SizeInput {
+    margin: 2% 0%;
+
+    @include respond-to(mob) { 
+        text-align: center;
+    }
+    @include respond-to(medium-screens) { 
+
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+.SizeInput select {
+    padding: 5px 8px;    
+    outline: none;
+    margin-left: 15px;
+    width: 12%;
+    text-align: center;
+
+    @include respond-to(mob) { 
+        width: 28%;
+    }
+    @include respond-to(medium-screens) { 
+        width: 30%;
+    }
+    @include respond-to(laptop-screens) { 
+        width: 23%;
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+.BuyButton {
+    margin: 2% 0%;
+
+    @include respond-to(mob) { 
+        text-align: center;
+    }
+    @include respond-to(medium-screens) { 
+
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+.BuyButton button {
+    padding: 8px 10px;
+    width: 35%;
+    outline: none;
+    border: 1px solid #303030;
+    background-color: #303030;
+    color: white;
+
+    @include respond-to(mob) { 
+        width: 70%;
+        padding: 10px 12px;
+    }
+    @include respond-to(medium-screens) { 
+        width: 60%;
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+.BuyButton button:hover {
+    background-color: #4e4e4e;
+    cursor: pointer;
+}
+
+.ProductInfo h1 {
+    margin-bottom: 4%;
+}
+
+.ProductDescWrapp {
+    @include respond-to(mob) { 
+        margin-top: 14%;
+    }
+    @include respond-to(medium-screens) { 
+
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+.ProductDescWrapp > div {
+    margin: 7% 0%;
+
+}
+
+
+
+.ProductDescWrapp > div:first-child {
+    margin: 0%;
+}
+
+.BulletList ul {
+    @include respond-to(mob) { 
+        padding: 5%;
+    }
+    @include respond-to(medium-screens) { 
+
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
+.BulletList li {
+    margin: 2% 0%;
+
+    @include respond-to(mob) { 
+
+    }
+    @include respond-to(medium-screens) { 
+
+    }
+    @include respond-to(laptop-screens) { 
+    
+    }
+    @include respond-to(wide-screens) { 
+
+    }
+}
+
